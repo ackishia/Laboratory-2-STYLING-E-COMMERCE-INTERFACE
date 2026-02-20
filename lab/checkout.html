@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+
+<section>
+    <h1>Shipping Information</h1>
+    <form>
+        <fieldset>
+            
+            <legend>Shipping Address</legend>
+           
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" required><br>
+
+        </fieldset>
+    </form>
+</section>
+
+<section>
+    <h2>Payment Method</h2>
+    <form>
+        <input type="radio" name="payment" id="card" required>
+        <label for="card">Credit Card</label><br>
+
+        <input type="radio" name="payment" id="paypal">
+        <label for="paypal">PayPal</label>
+    </form>
+</section>
+
+<aside>
+    <h2>Order Summary</h2>
+    <p>Items: ₱2,698</p>
+    <p>Shipping: ₱150</p>
+    <p><strong>Total: ₱2,848</strong></p>
+    <button>Place Order</button>
+</aside>
+
+</main>
+
+</body>
+</html>
