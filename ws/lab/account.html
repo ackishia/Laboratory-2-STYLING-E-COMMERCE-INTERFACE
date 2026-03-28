@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
     <link rel="stylesheet" href="style.css">
+    </style>
 </head>
 <body>
-
 <header>
-    <h1>Welcome, </h1>
-    <nav>
-        <ul>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">Profile Settings</a></li>
-            <li><a href="#">Wishlist</a></li>
-        </ul>
-    </nav>
+    <h1>Account</h1>
 </header>
+<div class="wrapper">
+    <div class="account-container">
 
-<main>
+        <main>
+            <section>
+                <h2>Login</h2>
 
-<section>
-    <h2>Previous Purchases</h2>
+                <form id="loginForm">
+                    <fieldset>
+                        <legend>Enter your account</legend>
 
-    <details>
-        <summary>Order #001 - Clothes</summary>
-        <p>Classic White T-Shirt - ₱499</p>
-        <p>Denim Jacket - ₱1,999</p>
-    </details>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" required><br><br>
 
-    <details>
-        <summary>Order #002 - Shoes</summary>
-        <p>Running Sneakers - ₱2,199</p>
-        <p>Leather Boots - ₱3,499</p>
-    </details>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" required><br><br>
 
-    <details>
-        <summary>Order #003 - Bags</summary>
-        <p>Leather Handbag - ₱2,500</p>
-        <p>Travel Backpack - ₱1,299</p>
-    </details>
+                        <button type="submit">Login</button>
+                    </fieldset>
+                </form>
+            </section>
 
-</section>
+            <section>
+                <h2>Your Account</h2>
 
-</main>
+                <p><strong>Name:</strong> <span id="account-name">Guest</span></p>
+                <p><strong>Status:</strong> <span id="account-status">Not logged in</span></p>
+            </section>
+
+        </main>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>

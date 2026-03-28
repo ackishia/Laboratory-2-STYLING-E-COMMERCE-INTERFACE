@@ -6,47 +6,62 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="checkout-page">
+
+<header>
+    <h1>Fashion Style</h1>
+</header>
 
 <main>
 
-<section>
-    <h1>Shipping Information</h1>
-    <form>
-        <fieldset>
-           
-            <legend>Shipping Address</legend>
-          
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required><br>
+    <section>
+        <h1>Shipping Information</h1>
 
-            <label for="street">Street:</label>
-            <input type="text" id="street" required><br>
+        <form id="checkout-form">
+            <fieldset>
+                <legend>Shipping Address</legend>c
 
-        </fieldset>
-    </form>
-</section>
+                <div class="input-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
 
-<section>
-    <h2>Payment Method</h2>
-    <form>
-        <input type="radio" name="payment" id="card" required>
-        <label for="card">Gcash</label><br>
+                <div class="input-group">
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" required>
+                </div>
 
-        <input type="radio" name="payment" id="paypal">
-        <label for="paypal">PayPal</label>
-    </form>
-</section>
+                <div class="input-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" required>
+                </div>
+            </fieldset>
 
-<aside>
-    <h2>Order Summary</h2>
-    <p>Items:</p>
-    <p>Shipping: </p>
-    <p><strong>Total: ₱2,848</strong></p>
-    <button>Place Order</button>
-</aside>
+            <fieldset>
+                <legend>Payment Method</legend>
+
+                <label>
+                    <input type="radio" name="payment" value="gcash" required>
+                    GCash
+                </label><br>
+
+                <label>
+                    <input type="radio" name="payment" value="paypal">
+                    PayPal
+                </label>
+            </fieldset>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <aside>
+        <h2>Order Summary</h2>
+        <h3 id="cart-total">Total: Php 0</h3>
+    </aside>
 
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>

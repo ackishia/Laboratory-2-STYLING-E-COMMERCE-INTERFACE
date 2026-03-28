@@ -8,22 +8,31 @@
 </head>
 <body>
 
+<header>
+    <h1>Your Shopping Cart</h1>
+    <h2 id="cart-total">Subtotal: Php.0</h2>
+
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
 <main>
 
-<h1>Your Shopping Cart</h1>
-
 <section>
-    <ul>
+    <ul class="cart-items">
         <li>
-            <img src="scarf brown bag.jpg" alt="scarf brown bag.jpg">
-            <h3>scarf brown bag</h3>
+            <img src="scarf brown bag.jpg" alt="scarf brown bag">
+            <h3>Scarf Brown Bag</h3>
             <p>Php.499</p>
             <label>Qty:
                 <input type="number" value="1" min="1">
             </label>
         </li>
-
-       
     </ul>
 </section>
 
@@ -38,5 +47,6 @@
 
 </main>
 
+<script src="script.js"></script>
 </body>
 </html>

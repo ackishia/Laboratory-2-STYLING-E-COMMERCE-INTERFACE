@@ -7,61 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <header>
-    <h1></h1>
+    <h1>Sign In to Your Account</h1>
 </header>
 
 <main class="container">
-
     <section class="login-box" aria-labelledby="login-heading">
         <h2 id="login-heading">Login</h2>
-
         <form id="loginForm">
-
             <fieldset>
-                <legend>Sign In to Your Account</legend>
-
+                <legend>Sign In Details</legend>
                 <div class="input-group">
-                    <label for="username"></label>
-                    <input
-                        type="text"
-                        id="username"
-                        name="username"
-                        placeholder="Username"
-                        required>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
                 </div>
-
                 <div class="input-group">
-                    <label for="password"></label>
-                    <input
-                        type="password"
-                        id="password"
-                        name="password"
-                        placeholder="Password"
-                        required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
                 </div>
-
-                <button type="submit" class="login-btn">
-                    Sign In
-                </button>
-
+                <button type="submit" class="login-btn">Sign In</button>
             </fieldset>
-
         </form>
     </section>
-
 </main>
 
 <footer>
-    <p>
-        Don't have an account?
-        <a href="#">Sign Up</a>
-    </p>
-    <p>
-        <a href="#">Forgot Password?</a>
-    </p>
+    <p>Don't have an account? <a href="#">Sign Up</a></p>
+    <p><a href="#">Forgot Password?</a></p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

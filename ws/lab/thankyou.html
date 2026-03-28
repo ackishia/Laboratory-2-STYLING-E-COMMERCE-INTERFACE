@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed</title>
+
+<header>
+    <h1>Thank You for Your Order!</h1>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="landing.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="confirmation">
+        <div class="checkmark">✅</div>
+
+        <h2>Order Confirmed!</h2>
+        <p>Order ID: <span id="order-id">---</span></p>
+        <p>Total Amount: <span id="order-total">---</span></p>
+
+        <p>Your order has been successfully placed.</p>
+
+        <div class="buttons">
+            <button onclick="location.href='products.html'">Shop More</button>
+            <button onclick="location.href='account.html'">Order History</button>
+        </div>
+    </section>
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const orderId = localStorage.getItem("orderId");
+    const total = localStorage.getItem("orderTotal");
+
+    document.getElementById("order-id").textContent = orderId || "N/A";
+    document.getElementById("order-total").textContent = "₱" + (total || "0");
+});
+</script>
+
+</body>
+</html>
